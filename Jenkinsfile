@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-          PATH = "usr/local/"
+          PATH+EXTRA = "/usr/local/bin:/opt/homebrew/bin"
           DOCKERHUB_CREDENTIALS_ID = 'docker_hub'
           DOCKERHUB_REPO = 'odeoodi/speed_cal'
           DOCKER_IMAGE_TAG = 'latest'
@@ -24,13 +24,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
         stage('Generate Report') {
             steps {
-                'mvn jacoco:report'
+                sh 'mvn jacoco:report'
             }
         }
 
