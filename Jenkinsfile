@@ -24,13 +24,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+                'mvn clean install'
             }
         }
 
         stage('Generate Report') {
             steps {
-                sh 'mvn jacoco:report'
+                'mvn jacoco:report'
             }
         }
 
