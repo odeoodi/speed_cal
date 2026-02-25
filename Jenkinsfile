@@ -24,13 +24,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh(script: 'mvn clean install', shell: '/bin/sh')
+                sh 'mvn clean install'
             }
         }
 
         stage('Generate Report') {
             steps {
-                sh(script: 'mvn clean install', shell: '/bin/bash')
+                sh 'mvn clean install'
             }
         }
 
