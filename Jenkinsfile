@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-          DOCKERHUB_CREDENTIALS_ID = 'docker_hub'
+          DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
           DOCKERHUB_REPO = 'odeoodi/speed_cal'
           DOCKER_IMAGE_TAG = 'latest'
       }
