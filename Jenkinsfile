@@ -18,7 +18,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/ADirin/Week6_3011_demo.git'
+                git 'https://github.com/odeoodi/speed_cal.git'
             }
         }
 
