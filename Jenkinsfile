@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-          PATH+EXTRA = "/usr/local/bin:/opt/homebrew/bin"
+          PATH = "/usr/local/bin/docker"
           DOCKERHUB_CREDENTIALS_ID = 'docker_hub'
           DOCKERHUB_REPO = 'odeoodi/speed_cal'
           DOCKER_IMAGE_TAG = 'latest'
