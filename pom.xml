@@ -29,7 +29,7 @@
     </dependencies>
 
     <build>
-        <finalName>laskin</finalName>
+        <finalName>speedcal</finalName>
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>

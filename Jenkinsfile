@@ -18,7 +18,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/odeoodi/speed_cal.git'
+                git branch: 'main', url: 'https://github.com/odeoodi/speed_cal.git'
             }
         }
 
